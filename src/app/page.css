@@ -1,0 +1,87 @@
+/* Genel Container */
+.hero-container {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f7f7f7;
+  }
+  
+  /* Başlık */
+  .hero-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Link butonu */
+  .hero-link {
+    font-size: 1.25rem;
+    color: #f06d9b;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 40px;
+    display: inline-block;
+    transition: color 0.3s ease;
+  }
+  
+  .hero-link:hover {
+    color: #ec4899;
+  }
+  
+  /* Görsel Galeri */
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  /* Görsel Kartı */
+  .image-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .image-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(240, 105, 155, 0.7); /* Pembe shadow */
+  }
+  
+  /* Görseller */
+  .image {
+    width: 100%;
+    height: auto;
+    border-bottom: 5px solid #f06d9b;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-card:hover .image {
+    transform: scale(1.05);
+  }
+  
+  /* Açıklama Metni */
+  .image-description {
+    padding: 20px;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2rem;
+    }
+    
+    .hero-link {
+      font-size: 1rem;
+    }
+  
+    .image-description {
+      font-size: 0.9rem;
+    }
+  }
+  
