@@ -1,36 +1,55 @@
+import styles from '../hakkinda/hakkında.module.css';
+import Image from 'next/image';
+import Link from 'next/link';
+import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+
 export default function Hakkinda() {
   return (
-    <div className="container mx-auto py-10 px-6 text-center flex flex-col items-center max-w-3xl space-y-6 sm:space-y-4">
-      {/* Başlık */}
-      <h1 className="text-3xl font-bold text-gray-800 mb-5">Hakkında</h1>
-
-      {/* Alt Başlık */}
-      <h2 className="text-2xl font-semibold mb-4 sm:text-lg sm:mb-3">
-        Size{' '}
-        <span className="box-decoration-clone bg-gradient-to-r from-indigo-600 to-pink-500 px-4 py-1 text-white sm:px-3 sm:py-0.5">
-          en iyi
-        </span>{' '}
-        ses donanımını sunuyoruz.
+    <div className={styles.baslik}>
+      <h1>Hakkında</h1>
+      <h2 className={styles.altbaslik}>
+        Size <span>en iyi</span> ses donanımını sunuyoruz.
       </h2>
 
-      {/* Açıklama Metni */}
-      <p className="text-lg max-w-2xl px-4 leading-relaxed sm:text-base sm:px-3 sm:max-w-full sm:text-center">
-        Türkiye'nin kalbinde yer alan ELF, ileri teknoloji kulaklıklar, AirPods,
-        hoparlörler ve ses aksesuarları sunan öncü mağazalardan biridir. Geniş
-        showroomumuzda ve lüks gösteri odalarımızda ürünlerimizi inceleyebilir,
-        deneyimleyebilirsiniz. Mağazamıza uğrayarak en iyi ses deneyimini
-        yaşamanız için sizlere yardımcı olmaktan mutluluk duyan uzman ekibimizle
-        tanışabilirsiniz.
-      </p>
+      <div className={styles.hakkinda}>
+        <p className={styles.aciklamaMetni}>
+          Türkiye'nin kalbinde yer alan ELF, ileri teknoloji kulaklıklar,
+          AirPods, hoparlörler ve ses aksesuarları sunan öncü mağazalardan
+          biridir.
+        </p>
 
-      {/* Resim */}
-      <div className="relative w-full sm:w-3/4 md:w-2/3">
-        <img
-          className="w-full h-auto rounded-lg bg-pink-600 shadow-xl shadow-pink-500"
-          style={{ boxShadow: '0 10px 60px rgba(240, 105, 155, 0.7)' }}
-          src="/img/image-gallery-2.jpg"
-          alt="Ses Donanımı"
-        />
+        <div className={styles.resim}>
+          <Image
+            src="/img/image-gallery-2.jpg"
+            alt="Ses Donanımı"
+            width={600}
+            height={400}
+          />
+        </div>
+      </div>
+
+      <div className={styles.misyon}>
+        <h3>Misyonumuz</h3>
+        <p>Müşterilerimize en kaliteli ses deneyimini sunmak.</p>
+      </div>
+
+      <h3>Bizi Takip Edin</h3>
+      <div className={styles.sosyalMedya}>
+        <Link href="https://facebook.com" target="_blank">
+          <FaFacebook size={20} />
+        </Link>
+        <Link href="https://twitter.com" target="_blank">
+          <FaTwitter size={20} />
+        </Link>
+        <Link href="https://instagram.com" target="_blank">
+          <FaInstagram size={20} />
+        </Link>
+      </div>
+
+      <div className={styles.yorumlar}>
+        <h3>Müşteri Yorumları</h3>
+        <blockquote>"Ses kalitesi açısından gerçekten eşsiz!"</blockquote>
+        <p>- Ayşe Yılmaz</p>
       </div>
     </div>
   );

@@ -1,87 +1,120 @@
-/* Genel Container */
 .hero-container {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #f7f7f7;
-  }
-  
-  /* Başlık */
-  .hero-title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  /* Link butonu */
-  .hero-link {
-    font-size: 1.25rem;
-    color: #f06d9b;
-    font-weight: 600;
-    text-decoration: none;
-    margin-bottom: 40px;
-    display: inline-block;
-    transition: color 0.3s ease;
-  }
-  
-  .hero-link:hover {
-    color: #ec4899;
-  }
-  
-  /* Görsel Galeri */
-  .image-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 30px;
-    justify-content: center;
-  }
-  
-  /* Görsel Kartı */
-  .image-card {
-    background-color: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .image-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px rgba(240, 105, 155, 0.7); /* Pembe shadow */
-  }
-  
-  /* Görseller */
-  .image {
-    width: 100%;
-    height: auto;
-    border-bottom: 5px solid #f06d9b;
-    transition: transform 0.3s ease;
-  }
-  
-  .image-card:hover .image {
-    transform: scale(1.05);
-  }
-  
-  /* Açıklama Metni */
-  .image-description {
-    padding: 20px;
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.5;
-    font-weight: 400;
-  }
-  
-  @media (max-width: 768px) {
-    .hero-title {
-      font-size: 2rem;
-    }
-    
-    .hero-link {
-      font-size: 1rem;
-    }
-  
-    .image-description {
-      font-size: 0.9rem;
-    }
-  }
-  
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #e0e0e0e2, #edececea);
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 120px 30px;
+  background: #101010ff;
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-img {
+  width: 320px;
+  border-radius: 20px;
+  object-fit: cover;
+  border: 5px solid transparent;
+  background: linear-gradient(45deg, #ff6b6b, #fcb69f);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease-in-out, border 0.3s ease;
+}
+
+.header-img:hover {
+  transform: scale(1.05);
+  border: 5px solid #ff6b6b;
+}
+
+.header-text {
+  max-width: 650px;
+  text-align: left;
+}
+
+.header h2 {
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header p {
+  font-size: 1.3rem;
+  color: white;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 50px 0;
+}
+
+.image-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.image-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 15px 35px rgba(240, 105, 155, 0.8);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-bottom: 6px solid #f06d9b;
+  transition: transform 0.3s ease;
+}
+
+.image-card:hover .image {
+  transform: scale(1.08);
+}
+
+.image-description {
+  padding: 25px;
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.btn {
+  display: block;
+  margin: 25px auto;
+  padding: 14px 24px;
+  background: linear-gradient(135deg, #ff6b6b, #d6456b);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #d6456b, #a83256);
+  transform: scale(1.05);
+}

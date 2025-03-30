@@ -1,0 +1,212 @@
+/* Başlık Alanı */
+.baslik {
+  padding: 50px;
+  background: linear-gradient(135deg, #ffffff, #f8f9fa);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  max-width: 1100px;
+  text-align: center;
+}
+
+.baslik h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.baslik h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #34495e;
+  margin-bottom: 25px;
+}
+
+/* Alt Başlık */
+.altbaslik span {
+  font-weight: bold;
+  color: #e73ca0;
+}
+
+/* Açıklama Alanı */
+.hakkinda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  padding: 40px 20px;
+}
+
+/* Açıklama Metni */
+.aciklamaMetni {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  color: #34495e;
+  font-size: 1.3rem;
+  max-width: 600px;
+  line-height: 1.8;
+  padding: 20px;
+  border-left: 4px solid  #e73ca0;
+  background: rgba(231, 76, 60, 0.05);
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.aciklamaMetni:hover {
+  background: rgba(231, 76, 60, 0.1);
+  transform: translateY(-3px);
+}
+
+/* Resim Alanı */
+.resim img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 16px;
+  box-shadow: 0 0 25px  #e73ca0;
+  cursor: pointer;
+  transition: transform 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.resim img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px  #e73ca0;
+}
+
+/* İçerik Başlıkları */
+.baslik h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #e73ca0;
+  margin-top: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #e73ca0;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Misyon, Vizyon, Değerler */
+.misyon,
+.vizyon,
+.degerler,
+.yorumlar {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(127, 140, 141, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.misyon:hover,
+.vizyon:hover,
+.degerler:hover,
+.yorumlar:hover {
+  background: rgba(127, 140, 141, 0.2);
+  transform: translateY(-3px);
+}
+
+/* Butonlar */
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background 0.3s ease, transform 0.2s ease-in-out;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #c0392b, #a83232);
+  transform: scale(1.05);
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+  .baslik {
+    padding: 30px;
+  }
+
+  .baslik h1 {
+    font-size: 2.4rem;
+  }
+
+  .baslik h2 {
+    font-size: 1.6rem;
+  }
+
+  .baslik h3 {
+    font-size: 1.4rem;
+  }
+
+  .hakkinda {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aciklamaMetni {
+    font-size: 1.1rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .resim img {
+    max-width: 90%;
+  }
+}
+/* Bizi Takip Edin Alanı */
+.biziTakip {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.biziTakip h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.sosyalMedya {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* İkonlar arasındaki boşluk */
+  height: 64px;
+}
+
+.sosyalMedya h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-right: 10px; /* Başlığın ikonlara çok yapışmaması için */
+}
+
+.sosyalMedya a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #141414;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.sosyalMedya a:hover {
+  background:  #e73ca0;
+  transform: scale(1.1);
+}

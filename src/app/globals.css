@@ -124,3 +124,19 @@
     @apply bg-background text-foreground;
   }
 }
+/* Genel Ayarlar */
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
