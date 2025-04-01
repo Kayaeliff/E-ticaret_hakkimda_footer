@@ -46,8 +46,8 @@ export default function Navbar() {
         >
           <div className=" hidden:md flex flex-col space-y-4 p-6">
             <Link href={'/'}>Ana Sayfa</Link>
-            <Link href={'/'}>Hakkında</Link>
-            <Link href={'/'}>Ürünler</Link>
+            <Link href={'/hakkinda'}>Hakkında</Link>
+            <Link href={'/urunler'}>Ürünler</Link>
           </div>
         </div>
         <div className="md:hidden">

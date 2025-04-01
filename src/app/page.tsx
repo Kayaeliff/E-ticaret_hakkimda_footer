@@ -37,7 +37,7 @@ export default async function Home() {
                 Doğal, gerçekçi ses ve olağanüstü yapı kalitesini deneyimleyin,
                 tutkulu müzik meraklıları için üretilmiştir.
               </p>
-              <Link href={'/ürünler'}>
+              <Link href={'/urunler'}>
                 <Button className="btn">Ürünü gör</Button>
               </Link>
             </div>
